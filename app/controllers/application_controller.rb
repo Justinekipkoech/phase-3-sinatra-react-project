@@ -11,7 +11,7 @@ class ApplicationController < Sinatra::Base
       response.headers["Access-Control-Allow-Methods"] = "GET, POST, PUT, PATCH, DELETE, OPTIONS"
   end
   get '/' do # this is the root route of the application (the homepage) but you can have as many routes as you want
-      {hello: "Just a starting code 😃"}.to_json
+      {hello: "Mambo Imechemuka😃"}.to_json
   end
 
   get '/customers' do
@@ -22,26 +22,28 @@ class ApplicationController < Sinatra::Base
       Customer.find(params[:id]).to_json
   end
 
-  post '/customer' do
+ post '/customer' do
       customer = Customer.create(
           name: params[:name]
-      )
+     )
       customer.to_json
   end
-
-  get '/meals' do 
-      Meal.all.limit(10).to_json
+  get "/meals" do
+    meals = Meal.all # get all meals in(array format)
+    meals.to_json()
   end
 
-  get '/meal/:id' do
-      Meal.find(params[:id]).to_json
+  
+
+  get '/meals/:id' do
+      Meal.find(params[:id]).to_json()
   end
 
   get '/meals/cuisine/:cuisine' do
-      Meal.find_by(cuisine: params[:cuisine]).to_json
+      Meal.find_by(cuisine: params[:cuisine]).to_json()
   end
   get '/meals/name/:name' do
-      Meal.find_by(name: params[:name]).to_json
+      Meal.find_by(name: params[:name]).to_json()
   end
 
   # get '/meal/most_expensive' do
@@ -50,7 +52,7 @@ class ApplicationController < Sinatra::Base
   #   end
 
   get '/meals/price' do
-      Meal.all.order(:price).to_json
+      Meal.all.order(:price).to_json()
   end
 
   get '/restaurants' do
@@ -63,12 +65,12 @@ class ApplicationController < Sinatra::Base
 
   get '/meals/most_expensive' do
       meal=Meal.all.order('price DESC').first
-      meal.to_json
+      meal.to_json()
   end
 
    get '/meals/cheapest' do
        meal=Meal.all.order('price DESC').last
-      meal.to_json
+      meal.to_json()
    end
   
   get '/order/:id' do
@@ -89,15 +91,25 @@ class ApplicationController < Sinatra::Base
 #         order.to_json
 #    end
 
-  post '/meal' do
-      meal = Meal.create(
+  post '/meals' do
+      meals = Meal.create(
           image: params[:image],
           name: params[:name],
           price: params[:price],
           cuisine: params[:cuisine],
           restaurant: params[:restaurant]
       )
-      meal.to_json
+      meals.to_json()
   end
+
+  delete "/meals/:id" do 
+    meals = Meal.find_by(id: params[:id])
+    meals.destroy
+    {
+      "message":"Successfully Deleted Meals #{params[:id]}",
+      "Status":"HTTP_Status_OK"
+    }.to_json()
+  end
+
 
 end

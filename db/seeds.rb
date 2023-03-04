@@ -1,4 +1,5 @@
 puts "🌱 Seeding spices..."
+
 Customer.destroy_all
 Meal.destroy_all
 
@@ -14,7 +15,7 @@ Meal.destroy_all
         name: Faker::Food.dish,
         cuisine: Faker::Food.ethnic_category,
         restaurant: Faker::Restaurant.name,
-        price: rand(1500..2500)
+        price: rand(1000..2500)
         )
       end
       
