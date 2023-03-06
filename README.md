@@ -2,13 +2,16 @@
 
 ## Learning Goals
 
-- Build a web basic API with Sinatra and Active Record to support a React
-  frontend and perform some crud operations.
+- This is a simple Meal Order App built using Sinatra web framework.
 
-## Introduction
 
-My app allows user to access different varieties of food and also allow them to purchase the meals online for deliveries.
 
+## Features
+- User can sign up and log in.
+- User can view the menu and add items to cart.
+- User can place an order and view order history.
+- Admin can add, update and delete menu items.
+- Admin can view all orders.
 ## Requirements
 
 For this project, you must:
