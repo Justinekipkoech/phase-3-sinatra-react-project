@@ -25,7 +25,6 @@
 - Ruby 2.7.3 or higher
 - Sinatra gem
 - SQLite3 gem
-- Bcrypt gem
 - Shotgun gem
 - Start the server:
 - Open your web browser and go to:[http://localhost:9292/]
@@ -36,6 +35,11 @@
 - Install dependencies:
 - Create the database:
 - Seed the database (optional):
+
+# Contributing
+- If you would like to contribute to the Meal Order App, feel free to submit a pull request or open an issue on the GitHub repository.
+
+
 
 
 ## Usage
