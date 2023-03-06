@@ -4,7 +4,13 @@
 
 - This is a simple Meal Order App built using Sinatra web framework. The app allows users to view the menu, add items to their cart, place orders, and view their order history. Admin users can also add, update, and delete menu items, as well as view all orders.
 
+# Technologies Used
+- The Meal Order App was built using the following technologies:
 
+- Ruby 2.7.3
+- Sinatra gem
+- SQLite3 gem
+- Shotgun gem
 
 ## Features
 - User can sign up and log in.
