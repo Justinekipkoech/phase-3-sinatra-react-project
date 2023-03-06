@@ -38,6 +38,16 @@
 - Seed the database (optional):
 
 
+## Usage
+- To sign up, click on the "Sign Up" link in the navigation bar and fill out the form.
+- To log in, click on the "Log In" link in the navigation bar and enter your credentials.
+- To view the menu, click on the "Menu" link in the navigation bar.
+- To add items to cart, click on the "Add to Cart" button next to the item on the menu page.
+- To place an order, click on the "Cart" link in the navigation bar, review your order, and click on the "Place Order" button.
+- To view your order history, click on the "Orders" link in the navigation bar.
+- To add, update or delete menu items (admin only).
+
+
 
 bash
 Copy code
