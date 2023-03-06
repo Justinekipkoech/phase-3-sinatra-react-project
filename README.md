@@ -52,6 +52,10 @@
 - To add, update or delete menu items (admin only).
 
 
+# Credits
+- The Meal Order App was built using the Sinatra web framework, with inspiration from various tutorials and code examples found online. Special thanks to the Sinatra community for their support and resources.
+
+
 ### Author 
 - Justine Kipkoech Limo
 
@@ -59,10 +63,6 @@
 
 
 
-Your React app should make fetch requests to your Sinatra backend! Here's an
-example:
 
-## Author
-- Justine Limo
 
 
