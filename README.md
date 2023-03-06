@@ -2,7 +2,7 @@
 
 ## Learning Goals
 
-- This is a simple Meal Order App built using Sinatra web framework.
+- This is a simple Meal Order App built using Sinatra web framework. The app allows users to view the menu, add items to their cart, place orders, and view their order history. Admin users can also add, update, and delete menu items, as well as view all orders.
 
 
 
