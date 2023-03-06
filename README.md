@@ -27,6 +27,11 @@
 
 # Installation
 - Clone this repository:
+- Install dependencies:
+- Create the database:
+- Seed the database (optional):
+
+
 
 bash
 Copy code
