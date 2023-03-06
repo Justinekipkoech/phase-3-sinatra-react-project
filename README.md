@@ -22,6 +22,16 @@
 - Bcrypt gem
 - Shotgun gem
 
+
+
+
+# Installation
+- Clone this repository:
+
+bash
+Copy code
+git clone https://github.com/your-username/meal-order-app-sinatra.git
+
 For this project, you must:
 
 - Use Active Record to interact with a database.
