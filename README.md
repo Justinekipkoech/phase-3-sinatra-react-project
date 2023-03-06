@@ -21,6 +21,12 @@
 - SQLite3 gem
 - Bcrypt gem
 - Shotgun gem
+- Start the server:
+- Open your web browser and go to:[http://localhost:9292/]
+
+
+
+
 
 
 
