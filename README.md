@@ -12,7 +12,15 @@
 - User can place an order and view order history.
 - Admin can add, update and delete menu items.
 - Admin can view all orders.
-## Requirements
+
+### Dependencies
+- This app requires the following dependencies:
+
+- Ruby 2.7.3 or higher
+- Sinatra gem
+- SQLite3 gem
+- Bcrypt gem
+- Shotgun gem
 
 For this project, you must:
 
